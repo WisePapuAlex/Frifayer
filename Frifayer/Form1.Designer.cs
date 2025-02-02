@@ -86,9 +86,9 @@
             lbl_Iniciodesesion.Font = new Font("Verdana", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_Iniciodesesion.Location = new Point(431, 47);
             lbl_Iniciodesesion.Name = "lbl_Iniciodesesion";
-            lbl_Iniciodesesion.Size = new Size(237, 23);
+            lbl_Iniciodesesion.Size = new Size(181, 23);
             lbl_Iniciodesesion.TabIndex = 5;
-            lbl_Iniciodesesion.Text = "Inicio de sesiónPENE";
+            lbl_Iniciodesesion.Text = "Inicio de sesión";
             lbl_Iniciodesesion.Click += lbl_Iniciodesesion_Click;
             // 
             // pictureBox1
@@ -137,6 +137,7 @@
             Controls.Add(lbl_Olvidarcontraseña);
             Name = "Form1";
             Text = "w";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
