@@ -73,6 +73,26 @@ namespace Frifayer.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap pexels_alscre_2847648 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-alscre-2847648", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pexels_codioful_6985001 {
+            get {
+                object obj = ResourceManager.GetObject("pexels-codioful-6985001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap png_clipart_email_box_internet_message_electronic_mailing_list_grey_miscellaneous_angle {
             get {
                 object obj = ResourceManager.GetObject("png-clipart-email-box-internet-message-electronic-mailing-list-grey-miscellaneous" +

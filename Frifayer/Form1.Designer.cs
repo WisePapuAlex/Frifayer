@@ -29,138 +29,185 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            lbl_Olvidarcontraseña = new Label();
-            tb_Correo = new TextBox();
-            tb_Contraseña = new TextBox();
-            btn_Iniciarsesion = new Button();
-            lbl_Iniciodesesion = new Label();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            panel1 = new Panel();
-            label1 = new Label();
+            pnl_Principal = new Panel();
+            pictureBox3 = new PictureBox();
+            pnl_3 = new Panel();
             label2 = new Label();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            lbl_Iniciodesesion = new Label();
+            btn_Iniciarsesion = new Button();
+            tb_Contraseña = new TextBox();
+            tb_Correo = new TextBox();
+            lbl_Olvidarcontraseña = new Label();
+            pnl_2 = new Panel();
             bt_interfaz = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pnl_Principal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnl_3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pnl_2.SuspendLayout();
             SuspendLayout();
             // 
-            // lbl_Olvidarcontraseña
+            // pnl_Principal
             // 
-            lbl_Olvidarcontraseña.AutoSize = true;
-            lbl_Olvidarcontraseña.Font = new Font("Century Gothic", 9.75F);
-            lbl_Olvidarcontraseña.Location = new Point(349, 219);
-            lbl_Olvidarcontraseña.Name = "lbl_Olvidarcontraseña";
-            lbl_Olvidarcontraseña.Size = new Size(179, 17);
-            lbl_Olvidarcontraseña.TabIndex = 0;
-            lbl_Olvidarcontraseña.Text = "¿Olvidaste tu contraseña?";
+            pnl_Principal.BackgroundImage = Properties.Resources.pexels_codioful_6985001;
+            pnl_Principal.BackgroundImageLayout = ImageLayout.Stretch;
+            pnl_Principal.Controls.Add(pictureBox3);
+            pnl_Principal.Controls.Add(pnl_3);
+            pnl_Principal.Controls.Add(pnl_2);
+            pnl_Principal.Dock = DockStyle.Fill;
+            pnl_Principal.Location = new Point(0, 0);
+            pnl_Principal.Name = "pnl_Principal";
+            pnl_Principal.Size = new Size(800, 450);
+            pnl_Principal.TabIndex = 0;
+            pnl_Principal.Paint += pnl_Principal_Paint;
             // 
-            // tb_Correo
+            // pictureBox3
             // 
-            tb_Correo.BorderStyle = BorderStyle.None;
-            tb_Correo.Font = new Font("Century Gothic", 9.75F);
-            tb_Correo.ForeColor = Color.Gray;
-            tb_Correo.Location = new Point(388, 89);
-            tb_Correo.Name = "tb_Correo";
-            tb_Correo.Size = new Size(350, 16);
-            tb_Correo.TabIndex = 1;
-            tb_Correo.Text = "Correo";
-            tb_Correo.TextAlign = HorizontalAlignment.Center;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(775, 0);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(26, 23);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 30;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
-            // tb_Contraseña
+            // pnl_3
             // 
-            tb_Contraseña.BorderStyle = BorderStyle.None;
-            tb_Contraseña.Font = new Font("Century Gothic", 9.75F);
-            tb_Contraseña.ForeColor = Color.Gray;
-            tb_Contraseña.Location = new Point(388, 140);
-            tb_Contraseña.Name = "tb_Contraseña";
-            tb_Contraseña.Size = new Size(350, 16);
-            tb_Contraseña.TabIndex = 2;
-            tb_Contraseña.Text = "Contraseña";
-            tb_Contraseña.TextAlign = HorizontalAlignment.Center;
-            tb_Contraseña.TextChanged += tb_Contraseña_TextChanged;
+            pnl_3.BackColor = Color.White;
+            pnl_3.Controls.Add(label2);
+            pnl_3.Controls.Add(label1);
+            pnl_3.Controls.Add(pictureBox2);
+            pnl_3.Controls.Add(pictureBox1);
+            pnl_3.Controls.Add(lbl_Iniciodesesion);
+            pnl_3.Controls.Add(btn_Iniciarsesion);
+            pnl_3.Controls.Add(tb_Contraseña);
+            pnl_3.Controls.Add(tb_Correo);
+            pnl_3.Controls.Add(lbl_Olvidarcontraseña);
+            pnl_3.Location = new Point(332, 40);
+            pnl_3.Name = "pnl_3";
+            pnl_3.Size = new Size(425, 370);
+            pnl_3.TabIndex = 19;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(16, 217);
+            label2.Name = "label2";
+            label2.Size = new Size(392, 15);
+            label2.TabIndex = 29;
+            label2.Text = "_____________________________________________________________________________";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(16, 166);
+            label1.Name = "label1";
+            label1.Size = new Size(392, 15);
+            label1.TabIndex = 28;
+            label1.Text = "_____________________________________________________________________________";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(23, 149);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(26, 23);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 27;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Image = Properties.Resources.icone_de_cadenas_de_securite_gris;
+            pictureBox1.Location = new Point(23, 193);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(26, 23);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 26;
+            pictureBox1.TabStop = false;
+            // 
+            // lbl_Iniciodesesion
+            // 
+            lbl_Iniciodesesion.AutoSize = true;
+            lbl_Iniciodesesion.Font = new Font("Century", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Iniciodesesion.ForeColor = Color.DimGray;
+            lbl_Iniciodesesion.Location = new Point(139, 85);
+            lbl_Iniciodesesion.Name = "lbl_Iniciodesesion";
+            lbl_Iniciodesesion.Size = new Size(163, 23);
+            lbl_Iniciodesesion.TabIndex = 25;
+            lbl_Iniciodesesion.Text = "Inicio de sesión";
             // 
             // btn_Iniciarsesion
             // 
             btn_Iniciarsesion.BackColor = Color.Pink;
             btn_Iniciarsesion.FlatStyle = FlatStyle.Flat;
             btn_Iniciarsesion.Font = new Font("Century Gothic", 9.75F);
-            btn_Iniciarsesion.Location = new Point(567, 213);
+            btn_Iniciarsesion.ForeColor = Color.Black;
+            btn_Iniciarsesion.Location = new Point(234, 273);
             btn_Iniciarsesion.Name = "btn_Iniciarsesion";
             btn_Iniciarsesion.Size = new Size(171, 28);
-            btn_Iniciarsesion.TabIndex = 3;
+            btn_Iniciarsesion.TabIndex = 24;
             btn_Iniciarsesion.Text = "Iniciar sesión";
             btn_Iniciarsesion.UseVisualStyleBackColor = false;
             // 
-            // lbl_Iniciodesesion
+            // tb_Contraseña
             // 
-            lbl_Iniciodesesion.AutoSize = true;
-            lbl_Iniciodesesion.Font = new Font("Century", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_Iniciodesesion.Location = new Point(473, 9);
-            lbl_Iniciodesesion.Name = "lbl_Iniciodesesion";
-            lbl_Iniciodesesion.Size = new Size(163, 23);
-            lbl_Iniciodesesion.TabIndex = 5;
-            lbl_Iniciodesesion.Text = "Inicio de sesión";
-            lbl_Iniciodesesion.Click += lbl_Iniciodesesion_Click;
+            tb_Contraseña.BorderStyle = BorderStyle.None;
+            tb_Contraseña.Font = new Font("Century Gothic", 9.75F);
+            tb_Contraseña.ForeColor = Color.Gray;
+            tb_Contraseña.Location = new Point(55, 200);
+            tb_Contraseña.Name = "tb_Contraseña";
+            tb_Contraseña.Size = new Size(350, 16);
+            tb_Contraseña.TabIndex = 23;
+            tb_Contraseña.Text = "Contraseña";
+            tb_Contraseña.TextAlign = HorizontalAlignment.Center;
             // 
-            // pictureBox1
+            // tb_Correo
             // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = Properties.Resources.icone_de_cadenas_de_securite_gris;
-            pictureBox1.Location = new Point(356, 133);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(26, 23);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            tb_Correo.BorderStyle = BorderStyle.None;
+            tb_Correo.Font = new Font("Century Gothic", 9.75F);
+            tb_Correo.ForeColor = Color.Gray;
+            tb_Correo.Location = new Point(55, 149);
+            tb_Correo.Name = "tb_Correo";
+            tb_Correo.Size = new Size(350, 16);
+            tb_Correo.TabIndex = 22;
+            tb_Correo.Text = "Correo";
+            tb_Correo.TextAlign = HorizontalAlignment.Center;
             // 
-            // pictureBox2
+            // lbl_Olvidarcontraseña
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(356, 89);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(26, 23);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 7;
-            pictureBox2.TabStop = false;
+            lbl_Olvidarcontraseña.AutoSize = true;
+            lbl_Olvidarcontraseña.Font = new Font("Century Gothic", 9.75F);
+            lbl_Olvidarcontraseña.ForeColor = Color.Black;
+            lbl_Olvidarcontraseña.Location = new Point(16, 279);
+            lbl_Olvidarcontraseña.Name = "lbl_Olvidarcontraseña";
+            lbl_Olvidarcontraseña.Size = new Size(179, 17);
+            lbl_Olvidarcontraseña.TabIndex = 21;
+            lbl_Olvidarcontraseña.Text = "¿Olvidaste tu contraseña?";
             // 
-            // panel1
+            // pnl_2
             // 
-            panel1.BackColor = Color.Pink;
-            panel1.Controls.Add(bt_interfaz);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(283, 450);
-            panel1.TabIndex = 8;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Location = new Point(349, 106);
-            label1.Name = "label1";
-            label1.Size = new Size(392, 15);
-            label1.TabIndex = 9;
-            label1.Text = "_____________________________________________________________________________";
-            label1.Click += label1_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Location = new Point(349, 157);
-            label2.Name = "label2";
-            label2.Size = new Size(392, 15);
-            label2.TabIndex = 10;
-            label2.Text = "_____________________________________________________________________________";
+            pnl_2.BackColor = Color.Pink;
+            pnl_2.Controls.Add(bt_interfaz);
+            pnl_2.Location = new Point(43, 40);
+            pnl_2.Name = "pnl_2";
+            pnl_2.Size = new Size(283, 370);
+            pnl_2.TabIndex = 18;
             // 
             // bt_interfaz
             // 
             bt_interfaz.BackColor = Color.Pink;
             bt_interfaz.FlatStyle = FlatStyle.Flat;
             bt_interfaz.Font = new Font("Century Gothic", 9.75F);
-            bt_interfaz.Location = new Point(209, 128);
+            bt_interfaz.Location = new Point(206, 109);
             bt_interfaz.Name = "bt_interfaz";
             bt_interfaz.Size = new Size(74, 28);
             bt_interfaz.TabIndex = 11;
@@ -173,42 +220,39 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(panel1);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Controls.Add(lbl_Iniciodesesion);
-            Controls.Add(btn_Iniciarsesion);
-            Controls.Add(tb_Contraseña);
-            Controls.Add(tb_Correo);
-            Controls.Add(lbl_Olvidarcontraseña);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Controls.Add(pnl_Principal);
+            FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Citas";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            pnl_Principal.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnl_3.ResumeLayout(false);
+            pnl_3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            pnl_2.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label lbl_Olvidarcontraseña;
-        private TextBox tb_Correo;
-        private TextBox tb_Contraseña;
-        private Button btn_Iniciarsesion;
-        private Label lbl_Iniciodesesion;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private Panel panel1;
-        private Label label1;
-        private Label label2;
+        private Panel pnl_Principal;
+        private Panel pnl_2;
         private Button bt_interfaz;
+        private Panel pnl_3;
+        private Label label2;
+        private Label label1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
+        private Label lbl_Iniciodesesion;
+        private Button btn_Iniciarsesion;
+        private TextBox tb_Contraseña;
+        private TextBox tb_Correo;
+        private Label lbl_Olvidarcontraseña;
+        private PictureBox pictureBox3;
     }
 }

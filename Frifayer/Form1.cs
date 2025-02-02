@@ -31,5 +31,15 @@ namespace Frifayer
         {
 
         }
+
+        private void pnl_Principal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
