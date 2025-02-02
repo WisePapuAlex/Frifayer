@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pnl_Principal = new Panel();
             pictureBox3 = new PictureBox();
+            pnl_central = new Panel();
             pnl_3 = new Panel();
             label2 = new Label();
             label1 = new Label();
@@ -45,6 +46,7 @@
             bt_interfaz = new Button();
             pnl_Principal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            pnl_central.SuspendLayout();
             pnl_3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -55,9 +57,8 @@
             // 
             pnl_Principal.BackgroundImage = Properties.Resources.pexels_codioful_6985001;
             pnl_Principal.BackgroundImageLayout = ImageLayout.Stretch;
+            pnl_Principal.Controls.Add(pnl_central);
             pnl_Principal.Controls.Add(pictureBox3);
-            pnl_Principal.Controls.Add(pnl_3);
-            pnl_Principal.Controls.Add(pnl_2);
             pnl_Principal.Dock = DockStyle.Fill;
             pnl_Principal.Location = new Point(0, 0);
             pnl_Principal.Name = "pnl_Principal";
@@ -76,6 +77,16 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
+            // pnl_central
+            // 
+            pnl_central.BackColor = Color.White;
+            pnl_central.Controls.Add(pnl_3);
+            pnl_central.Controls.Add(pnl_2);
+            pnl_central.Location = new Point(43, 40);
+            pnl_central.Name = "pnl_central";
+            pnl_central.Size = new Size(708, 370);
+            pnl_central.TabIndex = 30;
+            // 
             // pnl_3
             // 
             pnl_3.BackColor = Color.White;
@@ -88,10 +99,11 @@
             pnl_3.Controls.Add(tb_Contraseña);
             pnl_3.Controls.Add(tb_Correo);
             pnl_3.Controls.Add(lbl_Olvidarcontraseña);
-            pnl_3.Location = new Point(332, 40);
+            pnl_3.Dock = DockStyle.Right;
+            pnl_3.Location = new Point(283, 0);
             pnl_3.Name = "pnl_3";
             pnl_3.Size = new Size(425, 370);
-            pnl_3.TabIndex = 19;
+            pnl_3.TabIndex = 21;
             // 
             // label2
             // 
@@ -116,7 +128,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(23, 149);
+            pictureBox2.Location = new Point(23, 142);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(26, 23);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -197,10 +209,11 @@
             // 
             pnl_2.BackColor = Color.Pink;
             pnl_2.Controls.Add(bt_interfaz);
-            pnl_2.Location = new Point(43, 40);
+            pnl_2.Dock = DockStyle.Left;
+            pnl_2.Location = new Point(0, 0);
             pnl_2.Name = "pnl_2";
             pnl_2.Size = new Size(283, 370);
-            pnl_2.TabIndex = 18;
+            pnl_2.TabIndex = 20;
             // 
             // bt_interfaz
             // 
@@ -225,11 +238,13 @@
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form1";
+            Opacity = 0.95D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Citas";
             Load += Form1_Load;
             pnl_Principal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            pnl_central.ResumeLayout(false);
             pnl_3.ResumeLayout(false);
             pnl_3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
@@ -241,8 +256,8 @@
         #endregion
 
         private Panel pnl_Principal;
-        private Panel pnl_2;
-        private Button bt_interfaz;
+        private PictureBox pictureBox3;
+        private Panel pnl_central;
         private Panel pnl_3;
         private Label label2;
         private Label label1;
@@ -253,6 +268,7 @@
         private TextBox tb_Contraseña;
         private TextBox tb_Correo;
         private Label lbl_Olvidarcontraseña;
-        private PictureBox pictureBox3;
+        private Panel pnl_2;
+        private Button bt_interfaz;
     }
 }
