@@ -28,11 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             lbl_Olvidarcontraseña = new Label();
             tb_Correo = new TextBox();
             tb_Contraseña = new TextBox();
-            button1 = new Button();
+            btn_Iniciarsesion = new Button();
             flowLayoutPanel1 = new FlowLayoutPanel();
+            lbl_Iniciodesesion = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // lbl_Olvidarcontraseña
@@ -64,15 +70,15 @@
             tb_Contraseña.Text = "Contraseña";
             tb_Contraseña.TextChanged += tb_Contraseña_TextChanged;
             // 
-            // button1
+            // btn_Iniciarsesion
             // 
-            button1.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(551, 234);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 23);
-            button1.TabIndex = 3;
-            button1.Text = "Iniciar sesión";
-            button1.UseVisualStyleBackColor = true;
+            btn_Iniciarsesion.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_Iniciarsesion.Location = new Point(568, 231);
+            btn_Iniciarsesion.Name = "btn_Iniciarsesion";
+            btn_Iniciarsesion.Size = new Size(171, 23);
+            btn_Iniciarsesion.TabIndex = 3;
+            btn_Iniciarsesion.Text = "Iniciar sesión";
+            btn_Iniciarsesion.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1
             // 
@@ -83,18 +89,54 @@
             flowLayoutPanel1.Size = new Size(286, 450);
             flowLayoutPanel1.TabIndex = 4;
             // 
+            // lbl_Iniciodesesion
+            // 
+            lbl_Iniciodesesion.AutoSize = true;
+            lbl_Iniciodesesion.Font = new Font("Verdana", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Iniciodesesion.Location = new Point(431, 47);
+            lbl_Iniciodesesion.Name = "lbl_Iniciodesesion";
+            lbl_Iniciodesesion.Size = new Size(181, 23);
+            lbl_Iniciodesesion.TabIndex = 5;
+            lbl_Iniciodesesion.Text = "Inicio de sesión";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            pictureBox1.Image = Properties.Resources.icone_de_cadenas_de_securite_gris;
+            pictureBox1.Location = new Point(301, 157);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(26, 21);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(301, 113);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(26, 24);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 7;
+            pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
+            Controls.Add(lbl_Iniciodesesion);
             Controls.Add(flowLayoutPanel1);
-            Controls.Add(button1);
+            Controls.Add(btn_Iniciarsesion);
             Controls.Add(tb_Contraseña);
             Controls.Add(tb_Correo);
             Controls.Add(lbl_Olvidarcontraseña);
             Name = "Form1";
             Text = "w";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -104,7 +146,10 @@
         private Label lbl_Olvidarcontraseña;
         private TextBox tb_Correo;
         private TextBox tb_Contraseña;
-        private Button button1;
+        private Button btn_Iniciarsesion;
         private FlowLayoutPanel flowLayoutPanel1;
+        private Label lbl_Iniciodesesion;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }
