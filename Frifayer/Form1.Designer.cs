@@ -73,7 +73,7 @@
             // btn_Iniciarsesion
             // 
             btn_Iniciarsesion.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Iniciarsesion.Location = new Point(568, 231);
+            btn_Iniciarsesion.Location = new Point(511, 305);
             btn_Iniciarsesion.Name = "btn_Iniciarsesion";
             btn_Iniciarsesion.Size = new Size(171, 23);
             btn_Iniciarsesion.TabIndex = 3;
