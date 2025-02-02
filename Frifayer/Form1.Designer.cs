@@ -32,6 +32,7 @@
             tb_Correo = new TextBox();
             tb_Contraseña = new TextBox();
             button1 = new Button();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             SuspendLayout();
             // 
             // lbl_Olvidarcontraseña
@@ -72,11 +73,21 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.BackColor = SystemColors.ActiveCaptionText;
+            flowLayoutPanel1.Dock = DockStyle.Left;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(310, 450);
+            flowLayoutPanel1.TabIndex = 4;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(flowLayoutPanel1);
             Controls.Add(button1);
             Controls.Add(tb_Contraseña);
             Controls.Add(tb_Correo);
@@ -93,5 +104,6 @@
         private TextBox tb_Correo;
         private TextBox tb_Contraseña;
         private Button button1;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
