@@ -56,7 +56,7 @@
             // tb_Contraseña
             // 
             tb_Contraseña.Font = new Font("Verdana", 9.75F);
-            tb_Contraseña.Location = new Point(12, 173);
+            tb_Contraseña.Location = new Point(333, 155);
             tb_Contraseña.Name = "tb_Contraseña";
             tb_Contraseña.Size = new Size(389, 23);
             tb_Contraseña.TabIndex = 2;
