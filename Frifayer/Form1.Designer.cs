@@ -67,7 +67,7 @@
             // button1
             // 
             button1.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(551, 227);
+            button1.Location = new Point(551, 234);
             button1.Name = "button1";
             button1.Size = new Size(171, 23);
             button1.TabIndex = 3;
