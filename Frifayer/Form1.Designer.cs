@@ -37,6 +37,7 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             panel1 = new Panel();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -53,32 +54,37 @@
             // 
             // tb_Correo
             // 
+            tb_Correo.BorderStyle = BorderStyle.None;
             tb_Correo.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tb_Correo.Location = new Point(333, 113);
+            tb_Correo.Location = new Point(333, 104);
             tb_Correo.Name = "tb_Correo";
-            tb_Correo.Size = new Size(389, 23);
+            tb_Correo.Size = new Size(389, 16);
             tb_Correo.TabIndex = 1;
             tb_Correo.Text = "Correo";
+            tb_Correo.TextAlign = HorizontalAlignment.Center;
             // 
             // tb_Contraseña
             // 
+            tb_Contraseña.BorderStyle = BorderStyle.None;
             tb_Contraseña.Font = new Font("Verdana", 9.75F);
             tb_Contraseña.Location = new Point(333, 155);
             tb_Contraseña.Name = "tb_Contraseña";
-            tb_Contraseña.Size = new Size(389, 23);
+            tb_Contraseña.Size = new Size(389, 16);
             tb_Contraseña.TabIndex = 2;
             tb_Contraseña.Text = "Contraseña";
             tb_Contraseña.TextChanged += tb_Contraseña_TextChanged;
             // 
             // btn_Iniciarsesion
             // 
+            btn_Iniciarsesion.BackColor = Color.Pink;
+            btn_Iniciarsesion.FlatStyle = FlatStyle.Flat;
             btn_Iniciarsesion.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btn_Iniciarsesion.Location = new Point(511, 305);
+            btn_Iniciarsesion.Location = new Point(551, 228);
             btn_Iniciarsesion.Name = "btn_Iniciarsesion";
-            btn_Iniciarsesion.Size = new Size(171, 23);
+            btn_Iniciarsesion.Size = new Size(171, 28);
             btn_Iniciarsesion.TabIndex = 3;
             btn_Iniciarsesion.Text = "Iniciar sesión";
-            btn_Iniciarsesion.UseVisualStyleBackColor = true;
+            btn_Iniciarsesion.UseVisualStyleBackColor = false;
             // 
             // lbl_Iniciodesesion
             // 
@@ -121,12 +127,24 @@
             panel1.Size = new Size(283, 450);
             panel1.TabIndex = 8;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(333, 123);
+            label1.Name = "label1";
+            label1.Size = new Size(392, 15);
+            label1.TabIndex = 9;
+            label1.Text = "_____________________________________________________________________________";
+            label1.Click += label1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.SkyBlue;
+            BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(panel1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
@@ -154,5 +172,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Panel panel1;
+        private Label label1;
     }
 }
