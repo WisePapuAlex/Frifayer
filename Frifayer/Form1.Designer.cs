@@ -39,7 +39,7 @@
             // 
             lbl_Olvidarcontraseña.AutoSize = true;
             lbl_Olvidarcontraseña.Font = new Font("Verdana", 9.75F);
-            lbl_Olvidarcontraseña.Location = new Point(333, 245);
+            lbl_Olvidarcontraseña.Location = new Point(333, 234);
             lbl_Olvidarcontraseña.Name = "lbl_Olvidarcontraseña";
             lbl_Olvidarcontraseña.Size = new Size(180, 16);
             lbl_Olvidarcontraseña.TabIndex = 0;
@@ -66,11 +66,12 @@
             // 
             // button1
             // 
-            button1.Location = new Point(424, 302);
+            button1.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(551, 227);
             button1.Name = "button1";
             button1.Size = new Size(171, 23);
             button1.TabIndex = 3;
-            button1.Text = "button1";
+            button1.Text = "Iniciar sesión";
             button1.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1
@@ -79,7 +80,7 @@
             flowLayoutPanel1.Dock = DockStyle.Left;
             flowLayoutPanel1.Location = new Point(0, 0);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(310, 450);
+            flowLayoutPanel1.Size = new Size(286, 450);
             flowLayoutPanel1.TabIndex = 4;
             // 
             // Form1
