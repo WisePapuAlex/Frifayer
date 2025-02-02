@@ -6,5 +6,10 @@ namespace Frifayer
         {
             InitializeComponent();
         }
+
+        private void tb_Contraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

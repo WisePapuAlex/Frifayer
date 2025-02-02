@@ -56,11 +56,12 @@
             // tb_Contraseña
             // 
             tb_Contraseña.Font = new Font("Verdana", 9.75F);
-            tb_Contraseña.Location = new Point(333, 171);
+            tb_Contraseña.Location = new Point(12, 173);
             tb_Contraseña.Name = "tb_Contraseña";
             tb_Contraseña.Size = new Size(389, 23);
             tb_Contraseña.TabIndex = 2;
             tb_Contraseña.Text = "Contraseña";
+            tb_Contraseña.TextChanged += tb_Contraseña_TextChanged;
             // 
             // button1
             // 
@@ -81,7 +82,7 @@
             Controls.Add(tb_Correo);
             Controls.Add(lbl_Olvidarcontraseña);
             Name = "Form1";
-            Text = "Form1";
+            Text = "w";
             ResumeLayout(false);
             PerformLayout();
         }
