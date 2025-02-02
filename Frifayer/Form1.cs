@@ -11,5 +11,10 @@ namespace Frifayer
         {
 
         }
+
+        private void lbl_Iniciodesesion_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
