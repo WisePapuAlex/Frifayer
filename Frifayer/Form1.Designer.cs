@@ -33,10 +33,10 @@
             tb_Correo = new TextBox();
             tb_Contraseña = new TextBox();
             btn_Iniciarsesion = new Button();
-            flowLayoutPanel1 = new FlowLayoutPanel();
             lbl_Iniciodesesion = new Label();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -80,15 +80,6 @@
             btn_Iniciarsesion.Text = "Iniciar sesión";
             btn_Iniciarsesion.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.BackColor = SystemColors.ActiveCaptionText;
-            flowLayoutPanel1.Dock = DockStyle.Left;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(286, 450);
-            flowLayoutPanel1.TabIndex = 4;
-            // 
             // lbl_Iniciodesesion
             // 
             lbl_Iniciodesesion.AutoSize = true;
@@ -120,15 +111,24 @@
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Pink;
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(283, 450);
+            panel1.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(lbl_Iniciodesesion);
-            Controls.Add(flowLayoutPanel1);
             Controls.Add(btn_Iniciarsesion);
             Controls.Add(tb_Contraseña);
             Controls.Add(tb_Correo);
@@ -147,9 +147,9 @@
         private TextBox tb_Correo;
         private TextBox tb_Contraseña;
         private Button btn_Iniciarsesion;
-        private FlowLayoutPanel flowLayoutPanel1;
         private Label lbl_Iniciodesesion;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        private Panel panel1;
     }
 }
