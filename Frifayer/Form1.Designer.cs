@@ -125,7 +125,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Pink;
+            BackColor = Color.SkyBlue;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(pictureBox2);
