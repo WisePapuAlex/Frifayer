@@ -49,7 +49,7 @@
             tb_Correo.Font = new Font("Verdana", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             tb_Correo.Location = new Point(333, 113);
             tb_Correo.Name = "tb_Correo";
-            tb_Correo.Size = new Size(177, 23);
+            tb_Correo.Size = new Size(389, 23);
             tb_Correo.TabIndex = 1;
             tb_Correo.Text = "Correo";
             // 
@@ -58,15 +58,15 @@
             tb_Contraseña.Font = new Font("Verdana", 9.75F);
             tb_Contraseña.Location = new Point(333, 171);
             tb_Contraseña.Name = "tb_Contraseña";
-            tb_Contraseña.Size = new Size(177, 23);
+            tb_Contraseña.Size = new Size(389, 23);
             tb_Contraseña.TabIndex = 2;
             tb_Contraseña.Text = "Contraseña";
             // 
             // button1
             // 
-            button1.Location = new Point(526, 241);
+            button1.Location = new Point(551, 298);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(171, 23);
             button1.TabIndex = 3;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
