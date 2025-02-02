@@ -26,5 +26,10 @@ namespace Frifayer
         {
 
         }
+
+        private void lbl_login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
