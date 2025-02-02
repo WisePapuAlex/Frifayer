@@ -5,9 +5,9 @@ namespace Frifayer
         public Form1()
         {
             InitializeComponent();
-          //  SetRoundedRegion(pnl_2, 30); // Redondea con radio de 30 píxeles
-           // SetRoundedRegion(pnl_3, 30); // Redondea con radio de 30 píxeles
-                    
+           // redondeaPaneles(pnl_central, 15); // Redondea con radio de 30 píxeles
+            // SetRoundedRegion(pnl_3, 30); // Redondea con radio de 30 píxeles
+
 
 
         }
