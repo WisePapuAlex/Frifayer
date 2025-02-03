@@ -63,9 +63,59 @@ namespace Frifayer.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _386_3862792_mission_clipart_discipleship_group_people_white_png_transparent {
+            get {
+                object obj = ResourceManager.GetObject("386-3862792_mission-clipart-discipleship-group-people-white-png-transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fi_cnluxx_user_circle_solid {
+            get {
+                object obj = ResourceManager.GetObject("fi-cnluxx-user-circle-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fi_cnluxx_user_circle_solid1 {
+            get {
+                object obj = ResourceManager.GetObject("fi-cnluxx-user-circle-solid1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icone_de_cadenas_de_securite_gris {
             get {
                 object obj = ResourceManager.GetObject("icone-de-cadenas-de-securite-gris", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap my_password {
+            get {
+                object obj = ResourceManager.GetObject("my-password", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap OIP {
+            get {
+                object obj = ResourceManager.GetObject("OIP", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -47,17 +47,20 @@
             panel1 = new Panel();
             label3 = new Label();
             label4 = new Label();
-            pictureBox4 = new PictureBox();
             label5 = new Label();
-            button1 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            btn_Registrarse = new Button();
+            tb_ContraseñaRegistro = new TextBox();
+            tb_NombreCompleto = new TextBox();
+            tb_Usuario = new TextBox();
             label7 = new Label();
-            comboBox1 = new ComboBox();
+            cb_Rol = new ComboBox();
             label6 = new Label();
             label8 = new Label();
-            comboBox2 = new ComboBox();
+            cb_EstadoDeCuenta = new ComboBox();
+            pictureBox4 = new PictureBox();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
             pnl_Principal.SuspendLayout();
             pnl_central.SuspendLayout();
             pnl_3.SuspendLayout();
@@ -67,6 +70,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pnl_Principal
@@ -246,19 +252,22 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(comboBox2);
+            panel1.Controls.Add(pictureBox7);
+            panel1.Controls.Add(pictureBox6);
+            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(cb_EstadoDeCuenta);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(label6);
-            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(cb_Rol);
             panel1.Controls.Add(label7);
-            panel1.Controls.Add(textBox3);
+            panel1.Controls.Add(tb_Usuario);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label4);
-            panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(btn_Registrarse);
+            panel1.Controls.Add(tb_ContraseñaRegistro);
+            panel1.Controls.Add(tb_NombreCompleto);
             panel1.Location = new Point(34, 37);
             panel1.Name = "panel1";
             panel1.Size = new Size(425, 370);
@@ -284,16 +293,6 @@
             label4.TabIndex = 28;
             label4.Text = "_____________________________________________________________________________";
             // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(23, 89);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(26, 23);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 27;
-            pictureBox4.TabStop = false;
-            // 
             // label5
             // 
             label5.AutoSize = true;
@@ -305,54 +304,54 @@
             label5.TabIndex = 25;
             label5.Text = "Registrarse";
             // 
-            // button1
+            // btn_Registrarse
             // 
-            button1.BackColor = Color.Pink;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Microsoft Sans Serif", 9.75F);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(121, 325);
-            button1.Name = "button1";
-            button1.Size = new Size(171, 28);
-            button1.TabIndex = 24;
-            button1.Text = "Registrarse";
-            button1.UseVisualStyleBackColor = false;
+            btn_Registrarse.BackColor = Color.Pink;
+            btn_Registrarse.FlatStyle = FlatStyle.Flat;
+            btn_Registrarse.Font = new Font("Microsoft Sans Serif", 9.75F);
+            btn_Registrarse.ForeColor = Color.Black;
+            btn_Registrarse.Location = new Point(121, 325);
+            btn_Registrarse.Name = "btn_Registrarse";
+            btn_Registrarse.Size = new Size(171, 28);
+            btn_Registrarse.TabIndex = 24;
+            btn_Registrarse.Text = "Registrarse";
+            btn_Registrarse.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // tb_ContraseñaRegistro
             // 
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Microsoft Sans Serif", 9.75F);
-            textBox1.ForeColor = Color.Gray;
-            textBox1.Location = new Point(43, 196);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(350, 15);
-            textBox1.TabIndex = 23;
-            textBox1.Text = "Contraseña";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            tb_ContraseñaRegistro.BorderStyle = BorderStyle.None;
+            tb_ContraseñaRegistro.Font = new Font("Microsoft Sans Serif", 9.75F);
+            tb_ContraseñaRegistro.ForeColor = Color.Gray;
+            tb_ContraseñaRegistro.Location = new Point(43, 196);
+            tb_ContraseñaRegistro.Name = "tb_ContraseñaRegistro";
+            tb_ContraseñaRegistro.Size = new Size(350, 15);
+            tb_ContraseñaRegistro.TabIndex = 23;
+            tb_ContraseñaRegistro.Text = "Contraseña";
+            tb_ContraseñaRegistro.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox2
+            // tb_NombreCompleto
             // 
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Microsoft Sans Serif", 9.75F);
-            textBox2.ForeColor = Color.Gray;
-            textBox2.Location = new Point(43, 88);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(350, 15);
-            textBox2.TabIndex = 22;
-            textBox2.Text = "Nombre completo";
-            textBox2.TextAlign = HorizontalAlignment.Center;
+            tb_NombreCompleto.BorderStyle = BorderStyle.None;
+            tb_NombreCompleto.Font = new Font("Microsoft Sans Serif", 9.75F);
+            tb_NombreCompleto.ForeColor = Color.Gray;
+            tb_NombreCompleto.Location = new Point(43, 88);
+            tb_NombreCompleto.Name = "tb_NombreCompleto";
+            tb_NombreCompleto.Size = new Size(350, 15);
+            tb_NombreCompleto.TabIndex = 22;
+            tb_NombreCompleto.Text = "Nombre completo";
+            tb_NombreCompleto.TextAlign = HorizontalAlignment.Center;
             // 
-            // textBox3
+            // tb_Usuario
             // 
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Microsoft Sans Serif", 9.75F);
-            textBox3.ForeColor = Color.Gray;
-            textBox3.Location = new Point(43, 142);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(350, 15);
-            textBox3.TabIndex = 30;
-            textBox3.Text = "Usuario";
-            textBox3.TextAlign = HorizontalAlignment.Center;
+            tb_Usuario.BorderStyle = BorderStyle.None;
+            tb_Usuario.Font = new Font("Microsoft Sans Serif", 9.75F);
+            tb_Usuario.ForeColor = Color.Gray;
+            tb_Usuario.Location = new Point(43, 142);
+            tb_Usuario.Name = "tb_Usuario";
+            tb_Usuario.Size = new Size(350, 15);
+            tb_Usuario.TabIndex = 30;
+            tb_Usuario.Text = "Usuario";
+            tb_Usuario.TextAlign = HorizontalAlignment.Center;
             // 
             // label7
             // 
@@ -364,18 +363,18 @@
             label7.TabIndex = 31;
             label7.Text = "_____________________________________________________________________________";
             // 
-            // comboBox1
+            // cb_Rol
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(33, 276);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 32;
+            cb_Rol.FormattingEnabled = true;
+            cb_Rol.Location = new Point(33, 276);
+            cb_Rol.Name = "cb_Rol";
+            cb_Rol.Size = new Size(121, 23);
+            cb_Rol.TabIndex = 32;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.BackColor = Color.WhiteSmoke;
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("Microsoft Sans Serif", 9.75F);
             label6.ForeColor = Color.Gray;
             label6.Location = new Point(74, 243);
@@ -389,19 +388,59 @@
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 9.75F);
             label8.ForeColor = Color.Gray;
-            label8.Location = new Point(237, 243);
+            label8.Location = new Point(247, 243);
             label8.Name = "label8";
             label8.Size = new Size(112, 16);
             label8.TabIndex = 34;
             label8.Text = "Estado de cuenta";
             // 
-            // comboBox2
+            // cb_EstadoDeCuenta
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(237, 276);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 35;
+            cb_EstadoDeCuenta.FormattingEnabled = true;
+            cb_EstadoDeCuenta.Location = new Point(237, 275);
+            cb_EstadoDeCuenta.Name = "cb_EstadoDeCuenta";
+            cb_EstadoDeCuenta.Size = new Size(134, 23);
+            cb_EstadoDeCuenta.TabIndex = 35;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.OIP;
+            pictureBox4.Location = new Point(16, 72);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(50, 40);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 36;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.fi_cnluxx_user_circle_solid;
+            pictureBox5.Location = new Point(23, 135);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(31, 32);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 37;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.my_password;
+            pictureBox6.Location = new Point(23, 185);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(31, 33);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 38;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources._386_3862792_mission_clipart_discipleship_group_people_white_png_transparent;
+            pictureBox7.Location = new Point(23, 237);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(31, 33);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 39;
+            pictureBox7.TabStop = false;
             // 
             // Form1
             // 
@@ -429,6 +468,9 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
         }
 
@@ -452,16 +494,19 @@
         private Panel panel1;
         private Label label3;
         private Label label4;
-        private PictureBox pictureBox4;
         private Label label5;
-        private Button button1;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Button btn_Registrarse;
+        private TextBox tb_ContraseñaRegistro;
+        private TextBox tb_NombreCompleto;
         private Label label8;
         private Label label6;
-        private ComboBox comboBox1;
+        private ComboBox cb_Rol;
         private Label label7;
-        private TextBox textBox3;
-        private ComboBox comboBox2;
+        private TextBox tb_Usuario;
+        private ComboBox cb_EstadoDeCuenta;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox5;
     }
 }
