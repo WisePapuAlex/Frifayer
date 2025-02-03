@@ -30,6 +30,18 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             pnl_Principal = new Panel();
+            pnl_central = new Panel();
+            pnl_3 = new Panel();
+            label2 = new Label();
+            label1 = new Label();
+            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            lbl_Iniciodesesion = new Label();
+            btn_Iniciarsesion = new Button();
+            tb_Contraseña = new TextBox();
+            tb_Correo = new TextBox();
+            lbl_Olvidarcontraseña = new Label();
+            pnl_2 = new Panel();
             panel1 = new Panel();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
@@ -46,31 +58,19 @@
             btn_Registrarse = new Button();
             tb_ContraseñaRegistro = new TextBox();
             tb_NombreCompleto = new TextBox();
-            pnl_central = new Panel();
-            pnl_3 = new Panel();
-            label2 = new Label();
-            label1 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            lbl_Iniciodesesion = new Label();
-            btn_Iniciarsesion = new Button();
-            tb_Contraseña = new TextBox();
-            tb_Correo = new TextBox();
-            lbl_Olvidarcontraseña = new Label();
-            pnl_2 = new Panel();
+            bt_sign = new Button();
             bt_interfaz = new Button();
             pictureBox3 = new PictureBox();
-            bt_sign = new Button();
             pnl_Principal.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             pnl_central.SuspendLayout();
             pnl_3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             pnl_2.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
@@ -87,188 +87,6 @@
             pnl_Principal.Size = new Size(800, 450);
             pnl_Principal.TabIndex = 0;
             pnl_Principal.Paint += pnl_Principal_Paint;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.White;
-            panel1.Controls.Add(pictureBox6);
-            panel1.Controls.Add(pictureBox5);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(cb_EstadoDeCuenta);
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(cb_Rol);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(tb_Usuario);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(btn_Registrarse);
-            panel1.Controls.Add(tb_ContraseñaRegistro);
-            panel1.Controls.Add(tb_NombreCompleto);
-            panel1.Location = new Point(775, 95);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(425, 370);
-            panel1.TabIndex = 30;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = Properties.Resources.my_password;
-            pictureBox6.Location = new Point(23, 185);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(31, 33);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 38;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources.fi_cnluxx_user_circle_solid;
-            pictureBox5.Location = new Point(23, 135);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(31, 32);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 37;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.OIP;
-            pictureBox4.Location = new Point(16, 72);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(50, 40);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 36;
-            pictureBox4.TabStop = false;
-            // 
-            // cb_EstadoDeCuenta
-            // 
-            cb_EstadoDeCuenta.FormattingEnabled = true;
-            cb_EstadoDeCuenta.Location = new Point(237, 275);
-            cb_EstadoDeCuenta.Name = "cb_EstadoDeCuenta";
-            cb_EstadoDeCuenta.Size = new Size(134, 23);
-            cb_EstadoDeCuenta.TabIndex = 35;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label8.ForeColor = Color.Gray;
-            label8.Location = new Point(247, 243);
-            label8.Name = "label8";
-            label8.Size = new Size(112, 16);
-            label8.TabIndex = 34;
-            label8.Text = "Estado de cuenta";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Transparent;
-            label6.Font = new Font("Microsoft Sans Serif", 9.75F);
-            label6.ForeColor = Color.Gray;
-            label6.Location = new Point(74, 243);
-            label6.Name = "label6";
-            label6.Size = new Size(28, 16);
-            label6.TabIndex = 33;
-            label6.Text = "Rol";
-            // 
-            // cb_Rol
-            // 
-            cb_Rol.FormattingEnabled = true;
-            cb_Rol.Location = new Point(33, 276);
-            cb_Rol.Name = "cb_Rol";
-            cb_Rol.Size = new Size(121, 23);
-            cb_Rol.TabIndex = 32;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.BackColor = Color.Transparent;
-            label7.Location = new Point(23, 160);
-            label7.Name = "label7";
-            label7.Size = new Size(392, 15);
-            label7.TabIndex = 31;
-            label7.Text = "_____________________________________________________________________________";
-            // 
-            // tb_Usuario
-            // 
-            tb_Usuario.BorderStyle = BorderStyle.None;
-            tb_Usuario.Font = new Font("Microsoft Sans Serif", 9.75F);
-            tb_Usuario.ForeColor = Color.Gray;
-            tb_Usuario.Location = new Point(43, 142);
-            tb_Usuario.Name = "tb_Usuario";
-            tb_Usuario.Size = new Size(350, 15);
-            tb_Usuario.TabIndex = 30;
-            tb_Usuario.Text = "Usuario";
-            tb_Usuario.TextAlign = HorizontalAlignment.Center;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Location = new Point(16, 214);
-            label3.Name = "label3";
-            label3.Size = new Size(392, 15);
-            label3.TabIndex = 29;
-            label3.Text = "_____________________________________________________________________________";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Location = new Point(16, 106);
-            label4.Name = "label4";
-            label4.Size = new Size(392, 15);
-            label4.TabIndex = 28;
-            label4.Text = "_____________________________________________________________________________";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.DimGray;
-            label5.Location = new Point(150, 23);
-            label5.Name = "label5";
-            label5.Size = new Size(115, 24);
-            label5.TabIndex = 25;
-            label5.Text = "Registrarse";
-            // 
-            // btn_Registrarse
-            // 
-            btn_Registrarse.BackColor = Color.Pink;
-            btn_Registrarse.FlatStyle = FlatStyle.Flat;
-            btn_Registrarse.Font = new Font("Microsoft Sans Serif", 9.75F);
-            btn_Registrarse.ForeColor = Color.Black;
-            btn_Registrarse.Location = new Point(121, 325);
-            btn_Registrarse.Name = "btn_Registrarse";
-            btn_Registrarse.Size = new Size(171, 28);
-            btn_Registrarse.TabIndex = 24;
-            btn_Registrarse.Text = "Registrarse";
-            btn_Registrarse.UseVisualStyleBackColor = false;
-            // 
-            // tb_ContraseñaRegistro
-            // 
-            tb_ContraseñaRegistro.BorderStyle = BorderStyle.None;
-            tb_ContraseñaRegistro.Font = new Font("Microsoft Sans Serif", 9.75F);
-            tb_ContraseñaRegistro.ForeColor = Color.Gray;
-            tb_ContraseñaRegistro.Location = new Point(43, 196);
-            tb_ContraseñaRegistro.Name = "tb_ContraseñaRegistro";
-            tb_ContraseñaRegistro.Size = new Size(350, 15);
-            tb_ContraseñaRegistro.TabIndex = 23;
-            tb_ContraseñaRegistro.Text = "Contraseña";
-            tb_ContraseñaRegistro.TextAlign = HorizontalAlignment.Center;
-            // 
-            // tb_NombreCompleto
-            // 
-            tb_NombreCompleto.BorderStyle = BorderStyle.None;
-            tb_NombreCompleto.Font = new Font("Microsoft Sans Serif", 9.75F);
-            tb_NombreCompleto.ForeColor = Color.Gray;
-            tb_NombreCompleto.Location = new Point(43, 88);
-            tb_NombreCompleto.Name = "tb_NombreCompleto";
-            tb_NombreCompleto.Size = new Size(350, 15);
-            tb_NombreCompleto.TabIndex = 22;
-            tb_NombreCompleto.Text = "Nombre completo";
-            tb_NombreCompleto.TextAlign = HorizontalAlignment.Center;
             // 
             // pnl_central
             // 
@@ -408,6 +226,204 @@
             pnl_2.Size = new Size(283, 370);
             pnl_2.TabIndex = 20;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.White;
+            panel1.Controls.Add(pictureBox6);
+            panel1.Controls.Add(pictureBox5);
+            panel1.Controls.Add(pictureBox4);
+            panel1.Controls.Add(cb_EstadoDeCuenta);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(label6);
+            panel1.Controls.Add(cb_Rol);
+            panel1.Controls.Add(label7);
+            panel1.Controls.Add(tb_Usuario);
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label5);
+            panel1.Controls.Add(btn_Registrarse);
+            panel1.Controls.Add(tb_ContraseñaRegistro);
+            panel1.Controls.Add(tb_NombreCompleto);
+            panel1.Location = new Point(757, 77);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(425, 370);
+            panel1.TabIndex = 30;
+            panel1.Visible = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.my_password;
+            pictureBox6.Location = new Point(23, 186);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(31, 32);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 38;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.fi_cnluxx_user_circle_solid;
+            pictureBox5.Location = new Point(23, 135);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(31, 32);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 37;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.OIP;
+            pictureBox4.Location = new Point(23, 71);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(31, 32);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 36;
+            pictureBox4.TabStop = false;
+            // 
+            // cb_EstadoDeCuenta
+            // 
+            cb_EstadoDeCuenta.FormattingEnabled = true;
+            cb_EstadoDeCuenta.Items.AddRange(new object[] { "ACTIVO", "INACTIVO" });
+            cb_EstadoDeCuenta.Location = new Point(237, 275);
+            cb_EstadoDeCuenta.Name = "cb_EstadoDeCuenta";
+            cb_EstadoDeCuenta.Size = new Size(134, 23);
+            cb_EstadoDeCuenta.TabIndex = 35;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Microsoft Sans Serif", 9.75F);
+            label8.ForeColor = Color.Gray;
+            label8.Location = new Point(247, 243);
+            label8.Name = "label8";
+            label8.Size = new Size(112, 16);
+            label8.TabIndex = 34;
+            label8.Text = "Estado de cuenta";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Microsoft Sans Serif", 9.75F);
+            label6.ForeColor = Color.Gray;
+            label6.Location = new Point(74, 243);
+            label6.Name = "label6";
+            label6.Size = new Size(28, 16);
+            label6.TabIndex = 33;
+            label6.Text = "Rol";
+            // 
+            // cb_Rol
+            // 
+            cb_Rol.FormattingEnabled = true;
+            cb_Rol.Items.AddRange(new object[] { "ADMINISTRADOR", "EMPLEADO" });
+            cb_Rol.Location = new Point(33, 276);
+            cb_Rol.Name = "cb_Rol";
+            cb_Rol.Size = new Size(121, 23);
+            cb_Rol.TabIndex = 32;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Transparent;
+            label7.Location = new Point(23, 160);
+            label7.Name = "label7";
+            label7.Size = new Size(392, 15);
+            label7.TabIndex = 31;
+            label7.Text = "_____________________________________________________________________________";
+            // 
+            // tb_Usuario
+            // 
+            tb_Usuario.BorderStyle = BorderStyle.None;
+            tb_Usuario.Font = new Font("Microsoft Sans Serif", 9.75F);
+            tb_Usuario.ForeColor = Color.Gray;
+            tb_Usuario.Location = new Point(60, 142);
+            tb_Usuario.Name = "tb_Usuario";
+            tb_Usuario.Size = new Size(333, 15);
+            tb_Usuario.TabIndex = 30;
+            tb_Usuario.Text = "Usuario";
+            tb_Usuario.TextAlign = HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Location = new Point(16, 214);
+            label3.Name = "label3";
+            label3.Size = new Size(392, 15);
+            label3.TabIndex = 29;
+            label3.Text = "_____________________________________________________________________________";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Location = new Point(16, 106);
+            label4.Name = "label4";
+            label4.Size = new Size(392, 15);
+            label4.TabIndex = 28;
+            label4.Text = "_____________________________________________________________________________";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.DimGray;
+            label5.Location = new Point(150, 23);
+            label5.Name = "label5";
+            label5.Size = new Size(115, 24);
+            label5.TabIndex = 25;
+            label5.Text = "Registrarse";
+            // 
+            // btn_Registrarse
+            // 
+            btn_Registrarse.BackColor = Color.Pink;
+            btn_Registrarse.FlatStyle = FlatStyle.Flat;
+            btn_Registrarse.Font = new Font("Microsoft Sans Serif", 9.75F);
+            btn_Registrarse.ForeColor = Color.Black;
+            btn_Registrarse.Location = new Point(121, 325);
+            btn_Registrarse.Name = "btn_Registrarse";
+            btn_Registrarse.Size = new Size(171, 28);
+            btn_Registrarse.TabIndex = 24;
+            btn_Registrarse.Text = "Registrarse";
+            btn_Registrarse.UseVisualStyleBackColor = false;
+            // 
+            // tb_ContraseñaRegistro
+            // 
+            tb_ContraseñaRegistro.BorderStyle = BorderStyle.None;
+            tb_ContraseñaRegistro.Font = new Font("Microsoft Sans Serif", 9.75F);
+            tb_ContraseñaRegistro.ForeColor = Color.Gray;
+            tb_ContraseñaRegistro.Location = new Point(60, 196);
+            tb_ContraseñaRegistro.Name = "tb_ContraseñaRegistro";
+            tb_ContraseñaRegistro.Size = new Size(333, 15);
+            tb_ContraseñaRegistro.TabIndex = 23;
+            tb_ContraseñaRegistro.Text = "Contraseña";
+            tb_ContraseñaRegistro.TextAlign = HorizontalAlignment.Center;
+            // 
+            // tb_NombreCompleto
+            // 
+            tb_NombreCompleto.BorderStyle = BorderStyle.None;
+            tb_NombreCompleto.Font = new Font("Microsoft Sans Serif", 9.75F);
+            tb_NombreCompleto.ForeColor = Color.Gray;
+            tb_NombreCompleto.Location = new Point(60, 88);
+            tb_NombreCompleto.Name = "tb_NombreCompleto";
+            tb_NombreCompleto.Size = new Size(333, 15);
+            tb_NombreCompleto.TabIndex = 22;
+            tb_NombreCompleto.Text = "Nombre completo";
+            tb_NombreCompleto.TextAlign = HorizontalAlignment.Center;
+            // 
+            // bt_sign
+            // 
+            bt_sign.BackColor = Color.Pink;
+            bt_sign.FlatStyle = FlatStyle.Flat;
+            bt_sign.Font = new Font("Microsoft Sans Serif", 9.75F);
+            bt_sign.Location = new Point(206, 149);
+            bt_sign.Name = "bt_sign";
+            bt_sign.Size = new Size(74, 28);
+            bt_sign.TabIndex = 12;
+            bt_sign.Text = "Sign in";
+            bt_sign.UseVisualStyleBackColor = false;
+            bt_sign.Click += bt_sign_Click;
+            // 
             // bt_interfaz
             // 
             bt_interfaz.BackColor = Color.Pink;
@@ -432,19 +448,6 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // bt_sign
-            // 
-            bt_sign.BackColor = Color.Pink;
-            bt_sign.FlatStyle = FlatStyle.Flat;
-            bt_sign.Font = new Font("Microsoft Sans Serif", 9.75F);
-            bt_sign.Location = new Point(206, 149);
-            bt_sign.Name = "bt_sign";
-            bt_sign.Size = new Size(74, 28);
-            bt_sign.TabIndex = 12;
-            bt_sign.Text = "Sign in";
-            bt_sign.UseVisualStyleBackColor = false;
-            bt_sign.Click += bt_sign_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -461,17 +464,17 @@
             Text = "Citas";
             Load += Form1_Load;
             pnl_Principal.ResumeLayout(false);
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             pnl_central.ResumeLayout(false);
             pnl_3.ResumeLayout(false);
             pnl_3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             pnl_2.ResumeLayout(false);
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
