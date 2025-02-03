@@ -60,6 +60,7 @@
             pnl_2 = new Panel();
             bt_interfaz = new Button();
             pictureBox3 = new PictureBox();
+            bt_sign = new Button();
             pnl_Principal.SuspendLayout();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
@@ -399,6 +400,7 @@
             // pnl_2
             // 
             pnl_2.BackColor = Color.PaleGreen;
+            pnl_2.Controls.Add(bt_sign);
             pnl_2.Controls.Add(bt_interfaz);
             pnl_2.Dock = DockStyle.Left;
             pnl_2.Location = new Point(0, 0);
@@ -417,6 +419,7 @@
             bt_interfaz.TabIndex = 11;
             bt_interfaz.Text = "Login";
             bt_interfaz.UseVisualStyleBackColor = false;
+            bt_interfaz.Click += bt_interfaz_Click;
             // 
             // pictureBox3
             // 
@@ -428,6 +431,19 @@
             pictureBox3.TabIndex = 30;
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
+            // 
+            // bt_sign
+            // 
+            bt_sign.BackColor = Color.Pink;
+            bt_sign.FlatStyle = FlatStyle.Flat;
+            bt_sign.Font = new Font("Microsoft Sans Serif", 9.75F);
+            bt_sign.Location = new Point(206, 149);
+            bt_sign.Name = "bt_sign";
+            bt_sign.Size = new Size(74, 28);
+            bt_sign.TabIndex = 12;
+            bt_sign.Text = "Sign in";
+            bt_sign.UseVisualStyleBackColor = false;
+            bt_sign.Click += bt_sign_Click;
             // 
             // Form1
             // 
@@ -493,5 +509,6 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
+        private Button bt_sign;
     }
 }
