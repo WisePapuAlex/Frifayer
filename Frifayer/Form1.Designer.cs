@@ -60,7 +60,6 @@
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
             pnl_Principal.SuspendLayout();
             pnl_central.SuspendLayout();
             pnl_3.SuspendLayout();
@@ -72,7 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pnl_Principal
@@ -252,7 +250,6 @@
             // panel1
             // 
             panel1.BackColor = Color.White;
-            panel1.Controls.Add(pictureBox7);
             panel1.Controls.Add(pictureBox6);
             panel1.Controls.Add(pictureBox5);
             panel1.Controls.Add(pictureBox4);
@@ -432,16 +429,6 @@
             pictureBox6.TabIndex = 38;
             pictureBox6.TabStop = false;
             // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Properties.Resources._386_3862792_mission_clipart_discipleship_group_people_white_png_transparent;
-            pictureBox7.Location = new Point(23, 237);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(31, 33);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 39;
-            pictureBox7.TabStop = false;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -470,7 +457,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
         }
 
@@ -505,7 +491,6 @@
         private TextBox tb_Usuario;
         private ComboBox cb_EstadoDeCuenta;
         private PictureBox pictureBox4;
-        private PictureBox pictureBox7;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
     }
