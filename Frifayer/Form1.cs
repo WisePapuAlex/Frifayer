@@ -5,7 +5,7 @@ namespace Frifayer
         public Form1()
         {
             InitializeComponent();
-            // redondeaPaneles(pnl_central, 15); // Redondea con radio de 30 píxeles
+            redondeaPaneles(pnl_central, 15); // Redondea con radio de 30 píxeles
             // SetRoundedRegion(pnl_3, 30); // Redondea con radio de 30 píxeles
             cb_Rol.SelectedIndex = 0;
             cb_EstadoDeCuenta.SelectedIndex = 0;
