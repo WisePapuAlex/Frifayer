@@ -28,13 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(barra_lateral));
+            button1 = new Button();
             SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Dock = DockStyle.Top;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Image = (Image)resources.GetObject("button1.Image");
+            button1.ImageAlign = ContentAlignment.MiddleLeft;
+            button1.Location = new Point(0, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(136, 38);
+            button1.TabIndex = 0;
+            button1.Text = "       AGENDA";
+            button1.UseVisualStyleBackColor = true;
             // 
             // barra_lateral
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(136, 642);
+            Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "barra_lateral";
             Text = "Form1";
@@ -42,5 +59,7 @@
         }
 
         #endregion
+
+        private Button button1;
     }
 }
