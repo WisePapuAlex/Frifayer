@@ -199,6 +199,7 @@
             cb_Rol.Name = "cb_Rol";
             cb_Rol.Size = new Size(134, 23);
             cb_Rol.TabIndex = 32;
+            cb_Rol.KeyDown += cb_Rol_KeyDown;
             cb_Rol.KeyPress += cb_Rol_KeyPress;
             // 
             // label7
@@ -349,6 +350,7 @@
             lbl_crearcuenta.TabIndex = 30;
             lbl_crearcuenta.Text = "Crear cuenta";
             lbl_crearcuenta.Click += label9_Click;
+            lbl_crearcuenta.ChangeUICues += lbl_crearcuenta_ChangeUICues;
             // 
             // label2
             // 

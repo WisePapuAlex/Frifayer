@@ -168,19 +168,14 @@ namespace Frifayer
 
         private void tb_ContraseñaRegistro_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((int)e.KeyChar == (int)Keys.Enter)
-            {
-                cb_Rol.Focus();
-            }
+
         }
 
         private void cb_Rol_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((int)e.KeyChar == (int)Keys.Enter)
-            {
-                btn_Registrarse.Focus();
-            }
+
         }
+
 
         private void tb_NombreCompleto_Enter(object sender, EventArgs e)
         {
@@ -229,5 +224,30 @@ namespace Frifayer
                 tb_ContraseñaRegistro.Text = "Contraseña";
             }
         }
+
+        private void cb_Rol_KeyDown(object sender, KeyEventArgs e)
+        {
+
+            if (e.KeyCode == Keys.Down) // Flecha Abajo
+            {
+                if (cb_Rol.SelectedIndex < cb_Rol.Items.Count - 1)
+                {
+                    cb_Rol.SelectedIndex++;
+                }
+            }
+            else if (e.KeyCode == Keys.Up) // Flecha Arriba
+            {
+                if (cb_Rol.SelectedIndex > 0)
+                {
+                    cb_Rol.SelectedIndex--;
+                }
+            }
+        }
+
+        private void lbl_crearcuenta_ChangeUICues(object sender, UICuesEventArgs e)
+        {
+
+        }
     }
 }
+
