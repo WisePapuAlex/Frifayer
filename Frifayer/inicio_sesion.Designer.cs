@@ -199,6 +199,7 @@
             cb_Rol.Name = "cb_Rol";
             cb_Rol.Size = new Size(134, 23);
             cb_Rol.TabIndex = 32;
+            cb_Rol.KeyPress += cb_Rol_KeyPress;
             // 
             // label7
             // 
@@ -221,6 +222,9 @@
             tb_Usuario.TabIndex = 30;
             tb_Usuario.Text = "Usuario";
             tb_Usuario.TextAlign = HorizontalAlignment.Center;
+            tb_Usuario.Enter += tb_Usuario_Enter;
+            tb_Usuario.KeyPress += tb_Usuario_KeyPress;
+            tb_Usuario.Leave += tb_Usuario_Leave;
             // 
             // label3
             // 
@@ -277,6 +281,9 @@
             tb_ContraseñaRegistro.TabIndex = 23;
             tb_ContraseñaRegistro.Text = "Contraseña";
             tb_ContraseñaRegistro.TextAlign = HorizontalAlignment.Center;
+            tb_ContraseñaRegistro.Enter += tb_ContraseñaRegistro_Enter;
+            tb_ContraseñaRegistro.KeyPress += tb_ContraseñaRegistro_KeyPress;
+            tb_ContraseñaRegistro.Leave += tb_ContraseñaRegistro_Leave;
             // 
             // tb_NombreCompleto
             // 
@@ -289,6 +296,9 @@
             tb_NombreCompleto.TabIndex = 22;
             tb_NombreCompleto.Text = "Nombre completo";
             tb_NombreCompleto.TextAlign = HorizontalAlignment.Center;
+            tb_NombreCompleto.Enter += tb_NombreCompleto_Enter;
+            tb_NombreCompleto.KeyPress += tb_NombreCompleto_KeyPress;
+            tb_NombreCompleto.Leave += tb_NombreCompleto_Leave;
             // 
             // pnl_central
             // 
@@ -330,6 +340,7 @@
             // lbl_crearcuenta
             // 
             lbl_crearcuenta.AutoSize = true;
+            lbl_crearcuenta.BackColor = Color.Pink;
             lbl_crearcuenta.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_crearcuenta.ForeColor = Color.Black;
             lbl_crearcuenta.Location = new Point(181, 336);
@@ -415,6 +426,9 @@
             tb_Contraseña.TabIndex = 23;
             tb_Contraseña.Text = "Contraseña";
             tb_Contraseña.TextAlign = HorizontalAlignment.Center;
+            tb_Contraseña.Enter += tb_Contraseña_Enter;
+            tb_Contraseña.KeyPress += tb_Contraseña_KeyPress;
+            tb_Contraseña.Leave += tb_Contraseña_Leave;
             // 
             // tb_Correo
             // 
@@ -427,6 +441,10 @@
             tb_Correo.TabIndex = 22;
             tb_Correo.Text = "Correo";
             tb_Correo.TextAlign = HorizontalAlignment.Center;
+            tb_Correo.TextChanged += tb_Correo_TextChanged;
+            tb_Correo.Enter += tb_Correo_Enter;
+            tb_Correo.KeyPress += tb_Correo_KeyPress;
+            tb_Correo.Leave += tb_Correo_Leave;
             // 
             // lbl_Olvidarcontraseña
             // 
@@ -450,7 +468,7 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // Form1
+            // inicio_sesion
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -460,7 +478,7 @@
             FormBorderStyle = FormBorderStyle.None;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "Form1";
+            Name = "inicio_sesion";
             Opacity = 0.95D;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Citas";

@@ -96,5 +96,138 @@ namespace Frifayer
         {
 
         }
+
+        private void tb_Correo_Enter(object sender, EventArgs e)
+        {
+            if (tb_Correo.Text == "Correo")
+            {
+                tb_Correo.Text = "";
+            }
+        }
+
+        private void tb_Correo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_Correo_Leave(object sender, EventArgs e)
+        {
+            if (tb_Correo.Text == "")
+            {
+                tb_Correo.Text = "Correo";
+            }
+        }
+
+        private void tb_Contraseña_Enter(object sender, EventArgs e)
+        {
+            if (tb_Contraseña.Text == "Contraseña")
+            {
+                tb_Contraseña.Text = "";
+            }
+        }
+
+        private void tb_Contraseña_Leave(object sender, EventArgs e)
+        {
+            if (tb_Contraseña.Text == "")
+            {
+                tb_Contraseña.Text = "Contraseña";
+            }
+        }
+
+        private void tb_Contraseña_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                btn_Iniciarsesion.Focus();
+            }
+        }
+
+        private void tb_Correo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                tb_Contraseña.Focus();
+            }
+        }
+
+        private void tb_NombreCompleto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                tb_Usuario.Focus();
+            }
+        }
+
+        private void tb_Usuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                tb_ContraseñaRegistro.Focus();
+            }
+        }
+
+        private void tb_ContraseñaRegistro_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                cb_Rol.Focus();
+            }
+        }
+
+        private void cb_Rol_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                btn_Registrarse.Focus();
+            }
+        }
+
+        private void tb_NombreCompleto_Enter(object sender, EventArgs e)
+        {
+            if (tb_NombreCompleto.Text == "Nombre completo")
+            {
+                tb_NombreCompleto.Text = "";
+            }
+        }
+
+        private void tb_Usuario_Enter(object sender, EventArgs e)
+        {
+            if (tb_Usuario.Text == "Usuario")
+            {
+                tb_Usuario.Text = "";
+            }
+        }
+
+        private void tb_ContraseñaRegistro_Enter(object sender, EventArgs e)
+        {
+            if (tb_ContraseñaRegistro.Text == "Contraseña")
+            {
+                tb_ContraseñaRegistro.Text = "";
+            }
+        }
+
+        private void tb_NombreCompleto_Leave(object sender, EventArgs e)
+        {
+            if (tb_NombreCompleto.Text == "")
+            {
+                tb_NombreCompleto.Text = "Nombre completo";
+            }
+        }
+
+        private void tb_Usuario_Leave(object sender, EventArgs e)
+        {
+            if (tb_Usuario.Text == "")
+            {
+                tb_Usuario.Text = "Usuario";
+            }
+        }
+
+        private void tb_ContraseñaRegistro_Leave(object sender, EventArgs e)
+        {
+            if (tb_ContraseñaRegistro.Text == "")
+            {
+                tb_ContraseñaRegistro.Text = "Contraseña";
+            }
+        }
     }
 }
