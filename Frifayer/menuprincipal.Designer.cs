@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1370, 749);
+            ClientSize = new Size(1008, 749);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "menuprincipal";
             StartPosition = FormStartPosition.CenterScreen;
