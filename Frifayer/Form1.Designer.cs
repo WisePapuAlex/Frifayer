@@ -48,6 +48,7 @@
             tb_ContraseñaRegistro = new TextBox();
             tb_NombreCompleto = new TextBox();
             pnl_central = new Panel();
+            pnl_imagen = new Panel();
             pnl_iniciosesion = new Panel();
             lbl_crearcuenta = new Label();
             label2 = new Label();
@@ -59,7 +60,6 @@
             tb_Contraseña = new TextBox();
             tb_Correo = new TextBox();
             lbl_Olvidarcontraseña = new Label();
-            pnl_imagen = new Panel();
             pictureBox3 = new PictureBox();
             pnl_Principal.SuspendLayout();
             pnl_registro.SuspendLayout();
@@ -148,7 +148,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.OIP;
-            pictureBox4.Location = new Point(23, 71);
+            pictureBox4.Location = new Point(23, 77);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(31, 32);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -300,6 +300,15 @@
             pnl_central.Size = new Size(708, 370);
             pnl_central.TabIndex = 30;
             // 
+            // pnl_imagen
+            // 
+            pnl_imagen.BackColor = Color.PaleGreen;
+            pnl_imagen.Dock = DockStyle.Left;
+            pnl_imagen.Location = new Point(0, 0);
+            pnl_imagen.Name = "pnl_imagen";
+            pnl_imagen.Size = new Size(283, 370);
+            pnl_imagen.TabIndex = 20;
+            // 
             // pnl_iniciosesion
             // 
             pnl_iniciosesion.BackColor = Color.White;
@@ -429,15 +438,6 @@
             lbl_Olvidarcontraseña.Size = new Size(161, 16);
             lbl_Olvidarcontraseña.TabIndex = 21;
             lbl_Olvidarcontraseña.Text = "¿Olvidaste tu contraseña?";
-            // 
-            // pnl_imagen
-            // 
-            pnl_imagen.BackColor = Color.PaleGreen;
-            pnl_imagen.Dock = DockStyle.Left;
-            pnl_imagen.Location = new Point(0, 0);
-            pnl_imagen.Name = "pnl_imagen";
-            pnl_imagen.Size = new Size(283, 370);
-            pnl_imagen.TabIndex = 20;
             // 
             // pictureBox3
             // 
