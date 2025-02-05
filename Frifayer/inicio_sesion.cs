@@ -248,6 +248,18 @@ namespace Frifayer
         {
 
         }
+
+        private void lbl_crearcuenta_MouseEnter(object sender, EventArgs e)
+        {
+            lbl_crearcuenta.BackColor = Color.LightGray;
+            lbl_crearcuenta.Cursor = Cursors.Hand;
+        }
+
+        private void lbl_crearcuenta_MouseLeave(object sender, EventArgs e)
+        {
+            lbl_crearcuenta.BackColor = Color.Pink;
+            lbl_crearcuenta.Cursor = Cursors.Default;
+        }
     }
 }
 
