@@ -1,6 +1,6 @@
 ﻿namespace Frifayer
 {
-    partial class Form1
+    partial class inicio_sesion
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio_sesion));
             pnl_Principal = new Panel();
             pnl_registro = new Panel();
             bt_interfaz = new Button();

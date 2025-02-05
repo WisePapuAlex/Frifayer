@@ -1,8 +1,8 @@
 namespace Frifayer
 {
-    public partial class Form1 : Form
+    public partial class inicio_sesion : Form
     {
-        public Form1()
+        public inicio_sesion()
         {
             InitializeComponent();
             redondeaPaneles(pnl_central, 15); // Redondea con radio de 30 píxeles
