@@ -66,11 +66,7 @@ namespace Frifayer
 
         private void bt_interfaz_Click(object sender, EventArgs e)
         {
-            if (pnl_registro.Visible) // Si panel1 está visible, lo oculta y muestra pnl_3
-            {
-                pnl_registro.Visible = false;
-                pnl_iniciosesion.Visible = true;
-            }
+
 
         }
 
@@ -259,6 +255,20 @@ namespace Frifayer
         {
             lbl_crearcuenta.BackColor = Color.Pink;
             lbl_crearcuenta.Cursor = Cursors.Default;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            if (pnl_registro.Visible) // Si panel1 está visible, lo oculta y muestra pnl_3
+            {
+                pnl_registro.Visible = false;
+                pnl_iniciosesion.Visible = true;
+            }
         }
     }
 }
