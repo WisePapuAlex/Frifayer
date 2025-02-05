@@ -32,7 +32,6 @@
             pnl_Principal = new Panel();
             pnl_registro = new Panel();
             pictureBox7 = new PictureBox();
-            bt_interfaz = new Button();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
@@ -49,7 +48,6 @@
             tb_ContraseñaRegistro = new TextBox();
             tb_NombreCompleto = new TextBox();
             pnl_central = new Panel();
-            pnl_imagen = new Panel();
             pnl_iniciosesion = new Panel();
             lbl_crearcuenta = new Label();
             label2 = new Label();
@@ -61,6 +59,7 @@
             tb_Contraseña = new TextBox();
             tb_Correo = new TextBox();
             lbl_Olvidarcontraseña = new Label();
+            pnl_imagen = new Panel();
             pictureBox3 = new PictureBox();
             pnl_Principal.SuspendLayout();
             pnl_registro.SuspendLayout();
@@ -93,7 +92,6 @@
             // 
             pnl_registro.BackColor = Color.White;
             pnl_registro.Controls.Add(pictureBox7);
-            pnl_registro.Controls.Add(bt_interfaz);
             pnl_registro.Controls.Add(pictureBox6);
             pnl_registro.Controls.Add(pictureBox5);
             pnl_registro.Controls.Add(pictureBox4);
@@ -109,7 +107,7 @@
             pnl_registro.Controls.Add(btn_Registrarse);
             pnl_registro.Controls.Add(tb_ContraseñaRegistro);
             pnl_registro.Controls.Add(tb_NombreCompleto);
-            pnl_registro.Location = new Point(12, 68);
+            pnl_registro.Location = new Point(40, 109);
             pnl_registro.Name = "pnl_registro";
             pnl_registro.Size = new Size(425, 370);
             pnl_registro.TabIndex = 30;
@@ -121,50 +119,39 @@
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(14, 12);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(40, 28);
+            pictureBox7.Size = new Size(30, 25);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 39;
             pictureBox7.TabStop = false;
             pictureBox7.Click += pictureBox7_Click;
             // 
-            // bt_interfaz
-            // 
-            bt_interfaz.BackColor = Color.Pink;
-            bt_interfaz.FlatStyle = FlatStyle.Flat;
-            bt_interfaz.Font = new Font("Microsoft Sans Serif", 9.75F);
-            bt_interfaz.Location = new Point(137, 35);
-            bt_interfaz.Name = "bt_interfaz";
-            bt_interfaz.Size = new Size(40, 28);
-            bt_interfaz.TabIndex = 11;
-            bt_interfaz.UseVisualStyleBackColor = false;
-            bt_interfaz.Click += bt_interfaz_Click;
-            // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.my_password;
-            pictureBox6.Location = new Point(23, 186);
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(31, 196);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(31, 32);
+            pictureBox6.Size = new Size(26, 23);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 38;
             pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.fi_cnluxx_user_circle_solid;
-            pictureBox5.Location = new Point(23, 135);
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(31, 143);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(31, 32);
+            pictureBox5.Size = new Size(26, 23);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 37;
             pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.OIP;
-            pictureBox4.Location = new Point(23, 77);
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.InitialImage = (Image)resources.GetObject("pictureBox4.InitialImage");
+            pictureBox4.Location = new Point(31, 88);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(31, 32);
+            pictureBox4.Size = new Size(26, 23);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 36;
             pictureBox4.TabStop = false;
@@ -319,21 +306,12 @@
             // pnl_central
             // 
             pnl_central.BackColor = Color.White;
-            pnl_central.Controls.Add(pnl_imagen);
             pnl_central.Controls.Add(pnl_iniciosesion);
+            pnl_central.Controls.Add(pnl_imagen);
             pnl_central.Location = new Point(43, 40);
             pnl_central.Name = "pnl_central";
             pnl_central.Size = new Size(708, 370);
             pnl_central.TabIndex = 30;
-            // 
-            // pnl_imagen
-            // 
-            pnl_imagen.BackColor = Color.PaleGreen;
-            pnl_imagen.Dock = DockStyle.Left;
-            pnl_imagen.Location = new Point(0, 0);
-            pnl_imagen.Name = "pnl_imagen";
-            pnl_imagen.Size = new Size(283, 370);
-            pnl_imagen.TabIndex = 20;
             // 
             // pnl_iniciosesion
             // 
@@ -402,7 +380,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = Properties.Resources.icone_de_cadenas_de_securite_gris;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(23, 193);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(26, 23);
@@ -476,8 +454,18 @@
             lbl_Olvidarcontraseña.TabIndex = 21;
             lbl_Olvidarcontraseña.Text = "¿Olvidaste tu contraseña?";
             // 
+            // pnl_imagen
+            // 
+            pnl_imagen.BackColor = Color.PaleGreen;
+            pnl_imagen.Dock = DockStyle.Left;
+            pnl_imagen.Location = new Point(0, 0);
+            pnl_imagen.Name = "pnl_imagen";
+            pnl_imagen.Size = new Size(283, 370);
+            pnl_imagen.TabIndex = 20;
+            // 
             // pictureBox3
             // 
+            pictureBox3.BackColor = Color.Transparent;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(775, 0);
             pictureBox3.Name = "pictureBox3";
@@ -536,7 +524,6 @@
         private Panel pnl_imagen;
         private Label lbl_crearcuenta;
         private Panel pnl_registro;
-        private Button bt_interfaz;
         private PictureBox pictureBox6;
         private PictureBox pictureBox5;
         private PictureBox pictureBox4;

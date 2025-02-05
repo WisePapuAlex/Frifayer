@@ -13,7 +13,7 @@ namespace Frifayer
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new barra_lateral());
+            Application.Run(new inicio_sesion());
         }
     }
 }
