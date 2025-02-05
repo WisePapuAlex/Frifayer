@@ -99,7 +99,7 @@ namespace Frifayer
 
         private void tb_Correo_Enter(object sender, EventArgs e)
         {
-            if (tb_Correo.Text == "Correo")
+            if (tb_Correo.Text == "Usuario")
             {
                 tb_Correo.Text = "";
             }
@@ -114,7 +114,7 @@ namespace Frifayer
         {
             if (tb_Correo.Text == "")
             {
-                tb_Correo.Text = "Correo";
+                tb_Correo.Text = "Usuario";
             }
         }
 
