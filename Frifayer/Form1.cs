@@ -65,25 +65,35 @@ namespace Frifayer
 
         private void bt_interfaz_Click(object sender, EventArgs e)
         {
-            if (panel1.Visible) // Si panel1 está visible, lo oculta y muestra pnl_3
+            if (pnl_registro.Visible) // Si panel1 está visible, lo oculta y muestra pnl_3
             {
-                panel1.Visible = false;
-                pnl_3.Visible = true;
+                pnl_registro.Visible = false;
+                pnl_iniciosesion.Visible = true;
             }
 
         }
 
         private void bt_sign_Click(object sender, EventArgs e)
         {
-            if (!pnl_central.Controls.Contains(panel1)) // Si panel1 no está agregado, lo agrega
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            if (!pnl_central.Controls.Contains(pnl_registro)) // Si panel1 no está agregado, lo agrega
             {
-                pnl_central.Controls.Add(panel1);
-                panel1.Location = pnl_3.Location;
+                pnl_central.Controls.Add(pnl_registro);
+                pnl_registro.Location = pnl_iniciosesion.Location;
             }
 
             // Oculta pnl_3 y muestra panel1
-            pnl_3.Visible = false;
-            panel1.Visible = true;
+            pnl_iniciosesion.Visible = false;
+            pnl_registro.Visible = true;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
