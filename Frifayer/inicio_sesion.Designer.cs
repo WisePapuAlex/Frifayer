@@ -350,6 +350,8 @@
             lbl_crearcuenta.TabIndex = 30;
             lbl_crearcuenta.Text = "Crear cuenta";
             lbl_crearcuenta.Click += label9_Click;
+            lbl_crearcuenta.MouseEnter += lbl_crearcuenta_MouseEnter;
+            lbl_crearcuenta.MouseLeave += lbl_crearcuenta_MouseLeave;
             lbl_crearcuenta.ChangeUICues += lbl_crearcuenta_ChangeUICues;
             // 
             // label2
@@ -441,7 +443,7 @@
             tb_Correo.Name = "tb_Correo";
             tb_Correo.Size = new Size(334, 15);
             tb_Correo.TabIndex = 22;
-            tb_Correo.Text = "Correo";
+            tb_Correo.Text = "Usuario";
             tb_Correo.TextAlign = HorizontalAlignment.Center;
             tb_Correo.TextChanged += tb_Correo_TextChanged;
             tb_Correo.Enter += tb_Correo_Enter;
