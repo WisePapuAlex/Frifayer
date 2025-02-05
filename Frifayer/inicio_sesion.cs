@@ -6,7 +6,8 @@ namespace Frifayer
         {
             InitializeComponent();
             redondeaPaneles(pnl_central, 15); // Redondea con radio de 30 píxeles
-            // SetRoundedRegion(pnl_3, 30); // Redondea con radio de 30 píxeles
+
+            //para seleccionar el primer item de los combobox
             cb_Rol.SelectedIndex = 0;
             cb_EstadoDeCuenta.SelectedIndex = 0;
 
