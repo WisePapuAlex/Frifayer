@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            pnl_desplegable = new Panel();
+            pnl_ventanas = new Panel();
             SuspendLayout();
+            // 
+            // pnl_desplegable
+            // 
+            pnl_desplegable.BackColor = Color.DarkGreen;
+            pnl_desplegable.Dock = DockStyle.Left;
+            pnl_desplegable.Location = new Point(0, 0);
+            pnl_desplegable.Name = "pnl_desplegable";
+            pnl_desplegable.Size = new Size(152, 681);
+            pnl_desplegable.TabIndex = 0;
+            // 
+            // pnl_ventanas
+            // 
+            pnl_ventanas.Dock = DockStyle.Fill;
+            pnl_ventanas.Location = new Point(152, 0);
+            pnl_ventanas.Name = "pnl_ventanas";
+            pnl_ventanas.Size = new Size(856, 681);
+            pnl_ventanas.TabIndex = 1;
             // 
             // menuprincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1008, 749);
+            ClientSize = new Size(1008, 681);
+            Controls.Add(pnl_ventanas);
+            Controls.Add(pnl_desplegable);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "menuprincipal";
             StartPosition = FormStartPosition.CenterScreen;
@@ -43,5 +64,8 @@
         }
 
         #endregion
+
+        private Panel pnl_desplegable;
+        private Panel pnl_ventanas;
     }
 }
