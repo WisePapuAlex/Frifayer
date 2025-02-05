@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio_sesion));
             pnl_Principal = new Panel();
             pnl_registro = new Panel();
+            pictureBox7 = new PictureBox();
             bt_interfaz = new Button();
             pictureBox6 = new PictureBox();
             pictureBox5 = new PictureBox();
@@ -63,6 +64,7 @@
             pictureBox3 = new PictureBox();
             pnl_Principal.SuspendLayout();
             pnl_registro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -90,6 +92,7 @@
             // pnl_registro
             // 
             pnl_registro.BackColor = Color.White;
+            pnl_registro.Controls.Add(pictureBox7);
             pnl_registro.Controls.Add(bt_interfaz);
             pnl_registro.Controls.Add(pictureBox6);
             pnl_registro.Controls.Add(pictureBox5);
@@ -112,16 +115,27 @@
             pnl_registro.TabIndex = 30;
             pnl_registro.Visible = false;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(14, 12);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(40, 28);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 39;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
             // bt_interfaz
             // 
             bt_interfaz.BackColor = Color.Pink;
             bt_interfaz.FlatStyle = FlatStyle.Flat;
             bt_interfaz.Font = new Font("Microsoft Sans Serif", 9.75F);
-            bt_interfaz.Location = new Point(5, 9);
+            bt_interfaz.Location = new Point(137, 35);
             bt_interfaz.Name = "bt_interfaz";
             bt_interfaz.Size = new Size(40, 28);
             bt_interfaz.TabIndex = 11;
-            bt_interfaz.Text = "Login";
             bt_interfaz.UseVisualStyleBackColor = false;
             bt_interfaz.Click += bt_interfaz_Click;
             // 
@@ -154,6 +168,7 @@
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 36;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // cb_EstadoDeCuenta
             // 
@@ -490,6 +505,7 @@
             pnl_Principal.ResumeLayout(false);
             pnl_registro.ResumeLayout(false);
             pnl_registro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -536,5 +552,6 @@
         private Button btn_Registrarse;
         private TextBox tb_ContraseñaRegistro;
         private TextBox tb_NombreCompleto;
+        private PictureBox pictureBox7;
     }
 }
