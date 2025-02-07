@@ -270,6 +270,21 @@ namespace Frifayer
                 pnl_iniciosesion.Visible = true;
             }
         }
+
+        private void btn_Iniciarsesion_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del formulario MenuPrincipal
+            menuprincipal MenuPrincipal = new menuprincipal();
+
+            // Cuando se cierre MenuPrincipal, cerrar también el formulario de inicio de sesión
+            MenuPrincipal.FormClosed += (s, args) => this.Close();
+
+            // Ocultar el formulario de inicio de sesión
+            this.Hide();
+
+            // Mostrar el formulario MenuPrincipal
+            MenuPrincipal.Show();
+        }
     }
 }
 

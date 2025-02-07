@@ -411,6 +411,7 @@
             btn_Iniciarsesion.TabIndex = 24;
             btn_Iniciarsesion.Text = "Iniciar sesión";
             btn_Iniciarsesion.UseVisualStyleBackColor = false;
+            btn_Iniciarsesion.Click += btn_Iniciarsesion_Click;
             // 
             // tb_Contraseña
             // 
